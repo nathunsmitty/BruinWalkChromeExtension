@@ -6,9 +6,9 @@
   "version": "0.0.8",
   "short_name": "EZ BruinWalk Ratings",
   "background": {
-      "persistent": true,
-      "scripts": [ "background.js" ]
-   },
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "matches": ["*://sa.ucla.edu/*"],
@@ -16,13 +16,13 @@
       "run_at": "document_end"
     },
     {
-      "matches": [ "*://sa.ucla.edu/*"],
-      "css": [ "saUclaEduMain.css" ],
+      "matches": ["*://sa.ucla.edu/*"],
+      "css": ["saUclaEduMain.css"],
       "run_at": "document_end"
     },
     {
-      "matches": [ "*://be.my.ucla.edu/*"],
-      "css": [ "beUclaEduMain.css" ],
+      "matches": ["*://be.my.ucla.edu/*"],
+      "css": ["beUclaEduMain.css"],
       "run_at": "document_end"
     },
     {
@@ -31,12 +31,10 @@
       "run_at": "document_end"
     }
   ],
-  "permissions": [
-    "http://www.bruinwalk.com/*",
-    "activeTab"
-  ],
-  "icons": { 
+  "permissions": ["*://www.bruinwalk.com/*", "activeTab"],
+  "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
-    "128": "icon128.png" }
+    "128": "icon128.png"
+  }
 }
