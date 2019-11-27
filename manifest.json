@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["*://sa.ucla.edu/*"],
-      "js": ["jquery.js", "saUclaEduMain.js"],
+      "js": ["saUclaEduMain.js"],
       "run_at": "document_end"
     },
     {
@@ -27,11 +27,11 @@
     },
     {
       "matches": ["*://be.my.ucla.edu/*"],
-      "js": ["jquery.js", "beUclaEduMain.js"],
+      "js": ["beUclaEduMain.js"],
       "run_at": "document_end"
     }
   ],
-  "permissions": ["http://www.bruinwalk.com/*", "activeTab"],
+  "permissions": ["*://www.bruinwalk.com/*", "activeTab"],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

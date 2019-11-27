@@ -313,7 +313,7 @@ function addInstButtons(instCont, className) {
   for (let i = 0; i < numInst; i++) {
     const pCont = document.createElement('p')
     pCont.className = 'instructor-name-paragraph'
-    $(pCont).append(instructorName[i])
+    pCont.insertAdjacentHTML('beforeend', instructorName[i])
     pCont.title = instructorName[i]
 
     // creates and adds the buttons!
@@ -516,7 +516,7 @@ function instButtEvLis(instBut) {
               popup.appendChild(footerDiv)
 
               popupCont.appendChild(popup)
-              $(popupCont).insertAfter(instBut)
+              instBut.insertAdjacentElement('afterend', popupCont)
             }
           }
         )
@@ -546,7 +546,7 @@ function instButtEvLis(instBut) {
         instBut.target = '_blank'
 
         popupCont.appendChild(popup)
-        $(popupCont).insertAfter(instBut)
+        instBut.insertAdjacentElement('afterend', popupCont)
       }
     }
     // if details have already been loaded, no need to reload.
@@ -559,7 +559,8 @@ function instButtEvLis(instBut) {
         'inst-rating-popup-cont'
       )
       for (let i = 1; i < popups.length; i++) {
-        $(popups[i]).remove()
+        const popup = popups[i]
+        popup.parentElement.removeChild(popup)
       }
     }
   }
@@ -720,7 +721,8 @@ function instButtEvLisMOut(instBut) {
       'inst-rating-popup-cont'
     )
     for (let i = 1; i < popups.length; i++) {
-      $(popups[i]).remove()
+      const popup = popups[i]
+      popup.parentElement.removeChild(popup)
     }
   }
 }
