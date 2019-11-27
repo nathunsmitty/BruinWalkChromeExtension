@@ -1,0 +1,32 @@
+{
+  "name": "BruinWalkChromeExtension",
+  "version": "0.0.8",
+  "description": "Adds Bruinwalk professor ratings to class registration pages in the UCLA student portal.",
+  "main": "index.js",
+  "repository": "https://github.com/RobertUrsua/BruinWalkChromeExtension.git",
+  "author": "Robert Ursua <robertursua@yahoo.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "6.7.1",
+    "eslint-config-prettier": "6.7.0",
+    "husky": "3.1.0",
+    "lint-staged": "9.4.3",
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

@@ -1,127 +1,124 @@
 /* Instructor Name Modifiers */
-.instructorColumn p{
-	position: relative;
-    min-height: 20px;
+.instructorColumn p {
+  position: relative;
+  min-height: 20px;
 }
 
 /* Button modifiers */
 .inst-button-bwalk {
-	position: relative;
-	margin-left: 5px;
-	margin-bottom: 4px;
-	float: right;
+  position: relative;
+  margin-left: 5px;
+  margin-bottom: 4px;
+  float: right;
 
-	background-color: #3496E1;
-	border-width: 1px;
-	border-radius: 1px;
-	border-color: #3496E1;	
-	height: 14px;
-	width: 26px;
+  background-color: #3496e1;
+  border-width: 1px;
+  border-radius: 1px;
+  border-color: #3496e1;
+  height: 14px;
+  width: 26px;
 
-	text-indent: 1px;
-    font-size: 12px;
-    color: #FFFFFF;
-    font-weight: 700;
+  text-indent: 1px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 700;
 }
 .inst-button-bwalk:visited {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 .inst-button-bwalk:hover {
-    color: #A829F2;
+  color: #a829f2;
 }
 .inst-button-bwalk:link {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .inst-rating-bad {
-	background-color: #B20011;
-	border-color: #B20011;	
+  background-color: #b20011;
+  border-color: #b20011;
 }
 
 .inst-rating-good {
-	background-color: #03BC35;
-	border-color: #03BC35;	
+  background-color: #03bc35;
+  border-color: #03bc35;
 }
-
-
 
 /* Popup modifiers */
-.inst-rating-popup-cont.show{
-	display: block;
-	top: 5px;
-	left: -65px;
+.inst-rating-popup-cont.show {
+  display: block;
+  top: 5px;
+  left: -65px;
 }
 
-.inst-rating-popup-cont.hide{
-	display: none;
+.inst-rating-popup-cont.hide {
+  display: none;
 }
 
-.inst-rating-popup{
-	position: relative;
-	display: block;
-	float: right;
+.inst-rating-popup {
+  position: relative;
+  display: block;
+  float: right;
 
-    width: 130px;
-    text-align: center;
+  width: 130px;
+  text-align: center;
 }
 
 /* Popup Title */
-.inst-rating-title-div{
-	font-size: 12px;
-	line-height: 12px;
-	padding: 5px;
-	background-color: #3496E1;
-	color: #FFFFFF;
+.inst-rating-title-div {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  background-color: #3496e1;
+  color: #ffffff;
 }
-.inst-rating-title-div-nf{
-	font-size: 12px;
-	line-height: 12px;
-	padding: 5px;
-	background-color: #FFFFFF;
-	color: #000000;
+.inst-rating-title-div-nf {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Popup Rating Table */
-.inst-rating-table{
-	width:100%;
-	margin-top:5px;
+.inst-rating-table {
+  width: 100%;
+  margin-top: 5px;
 }
-.inst-rating-table td{
-	font-size: 12px;
+.inst-rating-table td {
+  font-size: 12px;
 }
 
 /* Popup Grades Table */
-.grades-dist-table{
-	margin-top: 5px;
-	width:100%;
+.grades-dist-table {
+  margin-top: 5px;
+  width: 100%;
 }
-.grades-dist-table-title-cell{
-	padding: 5px;
-	font-size: 12px;
-	line-height: 12px;
-	color: #FFFFFF;
+.grades-dist-table-title-cell {
+  padding: 5px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
 }
-.grades-dist-bar-cell{
-	padding-right: 2px;
-	padding-left: 2px;
+.grades-dist-bar-cell {
+  padding-right: 2px;
+  padding-left: 2px;
 }
-.grades-dist-bar{
-	position: relative;
-	background-color: #3496E1;
-	border-width: 1px;
-	border-radius: 1px;
-	border-color: #3496E1;	
+.grades-dist-bar {
+  position: relative;
+  background-color: #3496e1;
+  border-width: 1px;
+  border-radius: 1px;
+  border-color: #3496e1;
 }
-.grades-dist-grade-label-cell{
-	font-size: 10px;
-
+.grades-dist-grade-label-cell {
+  font-size: 10px;
 }
 
 /* Popup Footer */
-.inst-rating-footer-div{
-	margin-top: 5px;
-	padding: 5px;
-	font-size: 8px;
-	line-height: 8px;
-	color: #777777;
+.inst-rating-footer-div {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 8px;
+  line-height: 8px;
+  color: #777777;
 }
