@@ -31,7 +31,7 @@
       "run_at": "document_end"
     }
   ],
-  "permissions": ["http://www.bruinwalk.com/*", "activeTab"],
+  "permissions": ["*://www.bruinwalk.com/*", "activeTab"],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
