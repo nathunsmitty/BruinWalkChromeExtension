@@ -1,0 +1,10 @@
+{
+  "name": "BruinWalkChromeExtension",
+  "version": "0.0.8",
+  "description": "Adds Bruinwalk professor ratings to class registration pages in the UCLA student portal.",
+  "main": "index.js",
+  "repository": "https://github.com/RobertUrsua/BruinWalkChromeExtension.git",
+  "author": "Robert Ursua <robertursua@yahoo.com>",
+  "license": "MIT",
+  "private": true
+}
