@@ -313,7 +313,7 @@ function addInstButtons(instCont, className) {
   for (let i = 0; i < numInst; i++) {
     const pCont = document.createElement('p')
     pCont.className = 'instructor-name-paragraph'
-    $(pCont).append(instructorName[i])
+    pCont.insertAdjacentHTML('beforeend', instructorName[i])
     pCont.title = instructorName[i]
 
     // creates and adds the buttons!

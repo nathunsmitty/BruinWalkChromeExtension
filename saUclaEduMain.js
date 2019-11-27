@@ -102,7 +102,10 @@ function addInstButtons(instCont, courseName) {
   // this re-adds the professor names, each between paragraph tags
   for (let i = 0; i < numInst; i++) {
     const pCont = document.createElement('p')
-    $(pCont).append(instructorName[i].substring(0, 15))
+    const instructorNameNode = document.createTextNode(
+      instructorName[i].substring(0, 15)
+    )
+    pCont.append(instructorNameNode)
     pCont.title = instructorName[i]
 
     // creates and adds the buttons!
